@@ -1,12 +1,14 @@
 .navbar {
-    background-color: #0d1b2a;
+    background-color: var(--primary-color);
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 1rem 2rem;
-    border-radius: 1rem 1rem 0 0;
     position: relative;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(10px);
 }
 
 .logo {
@@ -21,7 +23,7 @@
 }
 
 .logo h1 {
-    color: #f4f4f4;
+    color: var(--font-color);
     font-size: 1.5rem;
 }
 
@@ -38,24 +40,21 @@
 }
 
 .navbar ul li a {
-    color: #f4f4f4;
+    color: var(--font-color);
     text-decoration: none;
     font-size: 1.1rem;
     transition: color 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #2cd0cb;
+    color: var(--secondary-color);
     text-decoration: underline;
-    text-decoration-color: #2cd0cb;
+    text-decoration-color: var(--secondary-color);
     text-underline-offset: 4px;
 }
 
 .navbar ul li a.active {
-    color: #2cd0cb;
-    text-decoration: underline;
-    text-decoration-color: #2cd0cb;
-    text-underline-offset: 4px;
+    color: var(--secondary-color);
 }
 
 /* Hamburger */
@@ -64,7 +63,7 @@
     font-size: 2rem;
     background: none;
     border: none;
-    color: #f4f4f4;
+    color: var(--font-color);
     cursor: pointer;
 }
 
@@ -82,7 +81,7 @@
         position: absolute;
         top: 80px;
         left: 0;
-        background-color: #0d1b2a;
+        background-color: var(--quaternary-color);
         border-radius: 0 0 1rem 1rem;
         padding: 1rem;
         z-index: 10;
@@ -108,7 +107,7 @@
     }
 
     .navbar.nav-open ul {
-        opacity: 0.8;
+        opacity: 0.9;
         visibility: visible;
         transform: translateY(0);
     }

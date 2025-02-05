@@ -1,0 +1,161 @@
+/* Footer.css */
+.footer {
+    width: 100%;
+    background-color: #031d41; /* Dark Blue */
+    color: #ffffff; /* White Text */
+    padding: 3rem 1.5rem;
+    border-top: 2px solid #03d9f0; /* Aqua Line */
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.footer-logo img {
+    max-width: 80px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.header-section {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-section h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+.header-section p {
+    font-size: 1rem;
+    color: #c5d3e0; /* Lighter text */
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.contact-item:hover {
+    color: #03d9f0; /* Aqua Hover */
+}
+
+.contact-item svg {
+    font-size: 1.3rem;
+    color: #03d9f0; /* Aqua Icons */
+}
+
+.nav-social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.navigation ul {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.navigation a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navigation a:hover {
+    color: #03d9f0; /* Aqua Hover */
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.social-media span {
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.social-media a {
+    color: #ffffff;
+    font-size: 1.3rem;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #03d9f0; /* Aqua Hover */
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #c5d3e0; /* Lighter text */
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 768px) {
+    .contact-grid {
+        grid-template-columns: repeat(3, 1fr);
+        text-align: left;
+    }
+
+    .nav-social {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .navigation ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .social-media {
+        flex-wrap: wrap;
+    }
+
+    .social-media span {
+        display: block;
+        text-align: center;
+        margin-bottom: 1rem;
+    }
+}

@@ -1,3 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Book+Antiqua:wght@700&display=swap');
+
+:root{
+  --primary-color: #001136;
+  --secondary-color: #00EAFA;
+  --tertiary-color: #d4f2f4;
+  --quaternary-color: #142169;
+  --dark-color: #000;
+  --font-color: #fff;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -5,8 +17,10 @@
 }
 
 body {
+  font-family: 'Inter', sans-serif;
+  /* font-family: Book Antiqua; */
+  background: linear-gradient(135deg, #262b88, #1119b5);
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: linear-gradient(135deg, #262b88, #1119b5);
 }
