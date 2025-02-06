@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from "react-router-dom";
 import logo from "/logo.png";
-import {FaMapMarkerAlt,FaPhone, FaEnvelope,FaLinkedin,FaInstagram,FaGithub,FaFacebook} from 'react-icons/fa';
+import {FaMapMarkerAlt,FaPhoneAlt, FaEnvelope,FaLinkedin,FaInstagram,FaGithub,FaFacebook} from 'react-icons/fa';
 import './Footer.css';
 
 const Footer = () => {
@@ -34,7 +34,7 @@ const Footer = () => {
                 <span>Kadiri Road, Angallu village, Madanapalle, Andhra Pradesh</span>
               </div>
               <div className="contact-item" onClick={handlePhoneClick}>
-                <FaPhone />
+                <FaPhoneAlt />
                 <span>9398983918</span>
               </div>
               <div className="contact-item" onClick={handleMailClick}>
@@ -61,7 +61,7 @@ const Footer = () => {
                 <Link to="https://instagram.com" target="_blank" rel="noopener noreferrer">
                   <FaInstagram />
                 </Link>
-                <Link to="https://github.com" target="_blank" rel="noopener noreferrer">
+                <Link to="https://github.com/Hopire" target="_blank" rel="noopener noreferrer">
                   <FaGithub />
                 </Link>
                 <Link to="https://facebook.com" target="_blank" rel="noopener noreferrer">
